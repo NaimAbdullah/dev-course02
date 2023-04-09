@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: lightgrey; */
+            /* background: white; */
+        }
+        /* internal css */
+        /* #second-p {
+            color: red;
+        }
+        .second-p {
+            color: purple;
+        } */
+        p {
+            /* RGB */
+            /* color: rgb(130, 159, 13) */
+            /* You can use rgba to control the opacity of the color */
+            color: rgba(0, 0, 0, 1)
+        }
+        h1 {
+            /* Hexadecimal color */
+            color: #008080;
+        }
+        body {
+            /* color name */
+            color: grey;
+        }
+        /*
+            Summary:
+                - Specificty order: id > class > element
+        */
+
+        #box1,
+        #box2,
+        .box3 {
+            color: green;
+        }
+
+        /* * {
+            color: red;
+        } */
+
+        .units {
+            font-size: 20px;
+        }
+        #p-one {
+            /* 32px */
+            font-size: 2em;
+        }
+        #p-two {
+            /* 32px */
+            font-size: 2rem;
+        }
+        main {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>CSS Basics</h1>
+
+    <!-- inline css: fastest predesence is the highest -->
+    <p>This is inline styled element</p>
+    <p id="second-p" class="second-p">This is inline styled element</p>
+    <p class="third-p">This is inline styled element</p>
+
+    <!-- group selectors -->
+    <div class="box">
+        <p id="box1">Box 1</p>
+        <div id="box2">Box 2</div>
+        <span class="box3">Box 3</span>
+    </div>
+
+    <!-- units -->
+    <h1>Units</h1>
+    <pre>
+        px
+        em
+        rem
+        percentage
+    </pre>
+
+    <!--
+
+        1 em = 16px (relative parent)
+        1 rem = 16px (relative to body/root)
+        100% = 16px
+    -->
+
+    <div class="units">
+        <p id="p-one">Em text one</p>
+        <p id="p-two">Rem text two</p>
+    </div>
+    </main>
+</body>
+</html>
