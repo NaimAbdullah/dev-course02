@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Box Model</title>
-    <style>
-      .box {
-        width: 200px;
-        height: 200px;
-        background-color: aqua;
-        /* padding-top: 20px;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Model</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 20px;
+      background-color: aqua;
+      /* padding-top: 20px;
             padding-bottom: 20px;
             padding-left: 20px; */
-        padding: 20px 5px 20px 20px;
-        /* border-width: 10px;
+      padding: 20px 5px 20px 20px;
+      /* border-width: 10px;
         border-style: solid;
         border-color: orangered; */
-        border: solid 10px orangered;
-        /* margin-left: 50px;
+      border: solid 10px orangered;
+      /* margin-left: 50px;
         margin-top: 50px;
         margin-right: 50px; */
-        margin: 50px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <h1>Box Model</h1>
-      <div class="box">BOX</div>
-    </div>
-  </body>
+      /* margin: 50px; */
+      text-align: center;
+    }
+
+    a:link {
+      color: red;
+      font-size: x-large;
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:hover {
+      color: blue;
+      opacity: 50%;
+    }
+
+    a:active {
+      color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Box Model</h1>
+    <div class="box">BOX</div>
+  </div>
+  <hr>
+  <div>
+    <h1>Pseudo Classes</h1>
+    <a href="https://www.walmarst.com">Univisted Link</a>
+    <br>
+    <a href="https://www.twitter.com">Visited Link</a>
+  </div>
+</body>
+
 </html>
