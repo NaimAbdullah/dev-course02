@@ -48,6 +48,28 @@
       padding: 10px;
       color: green;
     }
+
+    .firstBox {
+      border: solid 1px white;
+      padding: 10px;
+      margin: 10px 0px;
+    }
+
+    ul li:first-child {
+      color: orange;
+      background-color: red;
+    }
+
+    ul li:nth-child(2) {
+      color: white;
+      background-color: lightgreen;
+      font-size: x-small;
+    }
+
+    ul li:last-child {
+      color: orange;
+      background-color: blue;
+    }
   </style>
 </head>
 
@@ -55,6 +77,14 @@
   <h1 class="line1">
     Pr<span style="color: red">o</span>fil<span style="color: red">e</span>
   </h1>
+
+  <div class="firstBox">
+    <ul>
+      <li>Projects</li>
+      <li>Contact</li>
+      <li>Help</li>
+    </ul>
+  </div>
 
   <div class="box1">
     <img src="https://placeimg.com/200/200/any" alt="Random" width="100px" height="100px" />

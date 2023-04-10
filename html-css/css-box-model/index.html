@@ -43,6 +43,38 @@
     a:active {
       color: aqua;
     }
+
+    :root {
+      background-color: beige;
+    }
+
+    ul li:first-child {
+      background-color: blueviolet;
+    }
+
+    ul li:last-child {
+      background-color: orange;
+    }
+
+    ul li:nth-child(3) {
+      background-color: aquamarine;
+    }
+
+    span::before {
+      content: "School name is ";
+    }
+
+    span::after {
+      content: " in chicago";
+    }
+
+    .lorum::first-line {
+      color: red;
+    }
+
+    .lorum::first-letter {
+      font-size: 36px;
+    }
   </style>
 </head>
 
@@ -57,6 +89,27 @@
     <a href="https://www.walmarst.com">Univisted Link</a>
     <br>
     <a href="https://www.twitter.com">Visited Link</a>
+  </div>
+
+  <div>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Pseudo Elements</h2>
+    <span>Tech Global</span>
+  </div>
+  <div class="lorum">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi consequatur nulla unde quisquam? Obcaecati accusamus
+    ut nostrum unde, architecto deleniti minima autem natus aspernatur dolor tempora dolorem eos minus voluptatem.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi consequatur nulla unde quisquam? Obcaecati accusamus
+    ut nostrum unde, architecto deleniti minima autem natus aspernatur dolor tempora dolorem eos minus voluptatem.
   </div>
 </body>
 
