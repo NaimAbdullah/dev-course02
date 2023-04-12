@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            border: 1px solid;
+            width: 300px;
+            padding: 8px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="radio">Title</label>
+            <label for="yes">Mr</label>
+            <input type="radio" id="yes" name="attendance" />
+            <label for="no">Mrs</label>
+            <input type="radio" id="no" name="attendance" />
+            <label for="no">Miss</label>
+            <input type="radio" id="no" name="attendance" />
+
+        </div>
+        <div>
+            <label for="fName">First Name</label>
+            <input type="text" id="fname" placeholder="first_name" />
+        </div>
+        <div>
+            <label for="lName">Last Name</label>
+            <input type="text" id="lname" placeholder="last_name" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required placeholder="email" />
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <input type="phoneNumber" placeholder="phone" />
+        </div>
+        <div>
+            <label for="number">Zipcode</label>
+            <input type="zipcode" placeholder="zipcode" />
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" pattern="[1-9][a-z]" placeholder="password" />
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Palestine">Palestine</option>
+            </select>
+        </div>
+        <div>
+            <p>Anything I need to know?</p>
+            <textarea placeholder="Write here..."></textarea>
+        </div>
+        <div>
+            <input type="checkbox">I agree to the <a href="www.google.com">terms and conditions</a>
+        </div>
+        <div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

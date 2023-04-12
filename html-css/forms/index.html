@@ -52,7 +52,7 @@
         </div>
         <div>
             <label for="email">Email</label>
-            <input type="email" />
+            <input type="email" required />
             <!-- <input type="text" id="email" /> -->
         </div>
         <div>
@@ -92,7 +92,26 @@
             <input type="radio" id="no" name="attendance" />
         </div>
 
-        <textarea cols="30" rows="20" placeholder="Any questions?" maxlength="5"></textarea>
+        <div>
+            <textarea cols="30" rows="20" placeholder="Any questions?" maxlength="5"></textarea>
+        </div>
+
+        <div>
+            <label for="products">products</label>
+            <select id="products" name="products">
+                <option value="furniture">Furniture</option>
+                <option value="tables">Tables</option>
+                <option value="tv-stands">TV Stands</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- No difference between input type and button -->
+            <div>
+                <input type="submit">
+                <button disabled>Submit</button>
+            </div>
+        </div>
     </form>
 </body>
 
