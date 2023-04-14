@@ -5,102 +5,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Zone Homework</title>
+    <title>Homework</title>
 
     <style>
-        h1 {
+        .header {
+            height: 100px;
             background-color: black;
+            text-align: center;
             color: white;
+            padding-top: 20px;
         }
 
-        .menuOptions {
-            background-color: aqua;
+        .box {
+            border: 1px solid rgb(182, 182, 182);
             padding: 10px;
-            position: sticky;
-            top: 0px;
-            /* display: inline-block; */
+            margin: 20px 0;
+            position: relative;
         }
 
-        .menuOptions:hover {
-            background-color: aquamarine;
+        .menu {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #00bcd4;
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+        }
+
+        .menu li {
+            display: inline-block;
+            text-align: center;
+            width: 24%;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: solid;
+        }
+        
+        a:hover {
+            background-color: cyan;
+        }
+
+        p {
+            color: lightgrey;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>SkyZone Academy</h1>
-        <div>
-            <p class="menuOptions">Home</p>
-            <p class="menuOptions">Services</p>
-            <p class="menuOptions">Projects</p>
-            <p class="menuOptions">About</p>
-        </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rerum totam, quaerat in a, aperiam ullam
-            accusantium nam reprehenderit iusto labore eos ex reiciendis aspernatur repellat repudiandae nisi laudantium
-            ea!</p>
+    <div class="header">
+        <h1>SkyZone Academy</h1>
     </div>
+
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li>
+            <a href="">Services</a>
+        </li>
+        <li>
+            <a href="">Projects</a>
+        </li>
+        <li>
+            <a href="">About</a>
+        </li>
+    </ul>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus
+            urna sit amet sollicitudin venenatis. Aenean odio tortor, varius vitae
+            molestie eu, ultricies vel lacus. Nam viverra fermentum dapibus. Nulla
+            at semper diam. Phasellus sit amet hendrerit sapien, non semper felis.
+            Morbi augue leo, mattis nec leo sed, malesuada porta dui. Maecenas
+            pretium eros quis lorem luctus gravida.
+        </p>
+    </div>
+
 </body>
 
 </html>
