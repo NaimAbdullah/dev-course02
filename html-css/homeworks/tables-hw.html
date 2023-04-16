@@ -8,38 +8,42 @@
     <title>Document</title>
 
     <style>
+        :root {
+            align-items: center;
+        }
+
         .container {
-            border: 1px solid green;
-            background-color: green;
+            background-color: rgb(7, 90, 61);
             color: orange;
             padding: 10px;
             text-align: center;
+            width: 60%;
         }
 
-        table {
-            color: white;
-            border-collapse: collapse;
-        }
-
+        table,
         td {
+            color: white;
             border: 1px solid;
-            padding: 10px;
+            border-collapse: collapse;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
         }
 
         th {
-            border: 1px solid;
+            padding: 30px 120px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        Starbucks
+        <h1>Starbucks</h1>
 
         <table>
             <thead>
                 <tr>
-                    <th colspan="2">DOWNTOWN HOURS</th>
+                    <th colspan="2" id="title">DOWNTOWN HOURS</th>
                 </tr>
             </thead>
             <tbody>
@@ -75,10 +79,9 @@
                     <td>Closed</td>
                     <td>Sunday</td>
                 </tr>
-                
             </tbody>
         </table>
-        Walk-ins Welcome
+        <h1>Walk-ins Welcome</h1>
     </div>
 </body>
 
