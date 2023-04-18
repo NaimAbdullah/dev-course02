@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 1px solid;
+            display: grid;
+            height: 300px;
+            background-color: lightgreen;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: 100px 100px;
+            /* grid-template-rows: repeat(2, 100px); */
+            grid-template-rows: 100px 100px;
+            margin-bottom: 100px;
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+            /* grid-gap: 10px; */
+            gap: 5px;
+
+            /* justify-items: start;
+            justify-items: end;
+            justify-items: center; */
+
+            /* align-items: start;
+            align-items: end;
+            align-items: center;
+            align-items: stretch;  */
+
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around; */
+
+            /* align-content: end;
+            align-content: start; */
+        }
+
+        .container >div {
+            border: 1px solid black;
+            background-color: grey;
+            padding: 10px;
+            color: white;
+            /* width: 100px; */
+        }
+         main {
+            display: grid;
+            border: 1px solid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            height: 400px;
+            grid-template-areas:
+            "header header header header"
+            "section section . article"
+            "footer footer footer footer";
+            /* grid-template:
+            "header header header header" 1fr
+            "section section . article" 1fr
+            "footer footer footer footer" 1fr; */
+         }
+
+         header {
+            background-color: orange;
+            grid-area: header;
+         }
+
+         section {
+            background-color: blue;
+            grid-area: section;
+         }
+
+         article {
+            background-color: green;
+            grid-area: article;
+         }
+
+         footer {
+            background-color: yellow;
+            grid-area: footer;
+         }
+
+    </style>
+</head>
+<body>
+    
+    <!-- grid-template-columns and rows -->
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    
+    <!-- grid-template-areas -->
+    <main>
+        <header>Header</header>
+        <section>Section</section>
+        <article>Article</article>
+        <footer>Footer</footer>
+    </main>
+</body>
+</html>
