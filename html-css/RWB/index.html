@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+        }
+
+        @media screen and (max-width: 500px) {
+            /* All your style when screen size is less than 500px */
+
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            body {
+                background-color: grey;
+            }
+        }
+
+        /* MOBILE FIRST APPROACH */
+        /* 
+        on mobile i want blue and white colors
+        on tablet I want red and black colors
+        on desktop I want grey and yellow colors
+         */
+
+         /* Mobile Styles */
+         body {
+            background-color: blue;
+            color: white;
+         }
+
+         @media screen and (min-width: 768px) {
+            body {
+                background-color: red;
+                color: black;
+            }
+         }
+
+         @media screen and (min-width: 1280px) {
+            body {
+                background-color: gray;
+                color: yellow;
+            }
+         }
+
+         /* RESPONSIVE WEB DESIGN */
+         /* 
+        on mobile i want blue and white colors
+        on tablet I want red and black colors
+        on desktop I want grey and yellow colors
+         */
+
+         body {
+            background-color: grey;
+            color: yellow;
+         }
+
+         img {
+            display: inline-block;
+         }
+
+         h1 {
+            font-size: 28px;
+         }
+         @media screen and (min-width: 600px) and (max-width: 700px) {
+            body {
+                background-color: aqua;
+                color: black;
+            }
+         }
+
+         @media screen and (max-width: 600px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+         }
+    </style>
+</head>
+<body>
+    <h1>RWB</h1>
+    <img src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"/>
+</body>
+</html>
