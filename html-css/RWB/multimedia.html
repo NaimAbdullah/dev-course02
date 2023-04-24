@@ -7,31 +7,35 @@
     <title>Document</title>
 
     <style>
-        @media screen and (min-width: 300px){
-            audio {
-                display: grid;
-                padding: 10px;
-            }
+        video, audio {
+            width: 100%;
+            height: 150px;
         }
-        @media screen and (min-width: 700px){
-            audio {
-                display: inline;
-                padding: 10px;
+
+        @media screen and (min-width: 768px) {
+            body {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 150px 50px 150px;
+                gap: 10px;
+            }
+            video, audio { 
+                height: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
     
@@ -47,16 +51,17 @@
     <audio controls>
         <source src="./assets/happy.mp3" type="audio/mp3" />
     </audio>
-    <video controls width="400px" height="200px" autoplay>
+
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
-    <video controls width="400px" height="200px" autoplay>
+    <video controls  autoplay>
         <source src="./assets/video.mp4" type="video/mp4" />
     </video>
 </body>
