@@ -1,0 +1,51 @@
+/* ------ variables ----- */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+h1 {
+  color: orangered;
+}
+
+p {
+  color: gray;
+}
+
+/* ------ Nesting ----- */
+nav {
+  background-color: lightgray;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* ------ Extends/Inheritence ----- */
+.error, .warning, .success {
+  padding: 10px 20px;
+  color: #333;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid grey;
+  color: #333;
+}
+
+.success {
+  border: 2px solid green;
+}
+
+.warning {
+  border: 2px solid yellow;
+}
+
+.error {
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */

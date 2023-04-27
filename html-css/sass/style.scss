@@ -1,0 +1,62 @@
+/* ------ variables ----- */
+$primaryColor: gray;
+ $headingColor: orangered;
+ $font: Georgia, 'Times New Roman', Times, serif;
+ $lineHeight: 1.5;
+ 
+ body {
+     font-family: $font;
+     line-height: $lineHeight;
+    }
+    
+    h1 {
+        color: $headingColor;
+    }
+    
+    p {
+        color: $primaryColor;
+    }
+    
+    /* ------ Nesting ----- */
+    
+nav {
+    background-color: lightgray;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        li {
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}
+    /* ------ Extends/Inheritence ----- */
+
+    %shared-message {
+        padding: 10px 20px;
+        color: #333;
+    }
+
+    %not-used {
+        background-color: black;
+    }
+
+    button {
+        padding: 10px;
+        border: 1px solid grey;
+        color: #333;
+    }
+
+    .success {
+        border: 2px solid green;
+        @extend %shared-message
+    }
+    .warning {
+        border: 2px solid yellow;
+        @extend %shared-message
+    }
+    .error {
+        border: 2px solid red;
+        @extend %shared-message
+    }

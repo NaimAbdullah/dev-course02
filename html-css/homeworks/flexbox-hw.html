@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Hw</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .container>div>div {
+            display: flex;
+            border: 1px solid;
+            padding: 20px;
+        }
+
+        .productL>img {
+            width: 50%;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .product2 {
+            flex: 1;
+        }
+
+        .right>div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .shipping {
+            color: grey;
+        }
+
+        .inventory {
+            color: red;
+            font-weight: bold;
+        }
+
+        .list>img {
+            border: 1px solid;
+            width: 25%;
+        }
+
+        .list {
+            display: flex;
+        }
+
+        .more {
+            color: grey;
+            font-size: 25px;
+            text-align: center;
+            height: 40px;
+        }
+        span {
+            font-size: 30px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="productL">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9U-6E5lbLjqHAI4BQexx85xLy4UVgu9bpQ&usqp=CAU"
+                    alt="watch" />
+                <section>
+                    <p>Rolex GMT-Master II Stainless Steel Black Dial Automatic Mens Watch 116710N</p>
+                    <p><strong>$11,999.00</strong></p>
+                    <del>$12,499.00</del>
+                    <p class="shipping">Free shipping</p>
+                    <p class="inventory">Almost gone</p>
+                </section>
+            </div>
+            <div class="productL">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYpG89FS_L485-25-kPTJOLK2z06w72lW_3w&usqp=CAU"
+                    alt="watch" />
+                <section>
+                    <p>Rolex GMT-Master II Stainless Steel Black Dial Automatic Mens Watch 116710N</p>
+                    <p><strong>$2,350.00</strong></p>
+                    <p><del>$7,999.00</del> | <strong> 71% OFF</strong></p>
+                    <p class="shipping">Free shipping</p>
+                    <p class="inventory">Almost gone</p>
+
+                </section>
+            </div>
+            <div class="productL">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgy3F36KaoHNZnCOHybAlAvfD6kfIhvyQzw&usqp=CAU"
+                    alt="watch" />
+                <section>
+                    <p>Rolex GMT-Master II Stainless Steel Black Dial Automatic Mens Watch 116710N</p>
+                    <p><strong>$4199.30</strong></p>
+                    <p><del>$5,999.00</del> | <strong> 30% OFF</strong></p>
+                    <p class="shipping">Free shipping</p>
+                </section>
+            </div>
+        </div>
+        <div class="right">
+            <div class="product2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfa3Wy4lAApXUqfeH4J-RyuODbIWGvk7jHPQ&usqp=CAU"
+                    alt="watch" />
+                <section>
+                    <p>Rolex GMT-Master II Stainless Steel Black Dial Automatic Mens Watch 116710N</p>
+                    <p><strong>$11,999.00</strong></p>
+                    <del>$12,499.00</del>
+                    <p class="shipping">Free shipping</p>
+                </section>
+            </div>
+            <div class="product3">
+                <div class="list">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9U-6E5lbLjqHAI4BQexx85xLy4UVgu9bpQ&usqp=CAU" />
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9U-6E5lbLjqHAI4BQexx85xLy4UVgu9bpQ&usqp=CAU" />
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9U-6E5lbLjqHAI4BQexx85xLy4UVgu9bpQ&usqp=CAU" />
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9U-6E5lbLjqHAI4BQexx85xLy4UVgu9bpQ&usqp=CAU" />
+                </div>
+                <p class="more">
+                    Show <span>85</span> more
+                    <br>
+                    We Heart These Deals
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
