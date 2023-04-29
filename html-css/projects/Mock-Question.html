@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            height: 50em;
+        }
+
+        .container>div {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .yellow {
+            display: flex;
+            font-size: 25px;
+            flex-direction: column;
+            background-color: rgb(255, 255, 133);
+            flex: 1;
+        }
+        
+        .red {
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            background-color: lightcoral;
+            flex: 1;
+        }
+        
+        .green {
+            font-size: 25px;
+            background-color: lightgreen;
+            flex: 1;
+        }
+        
+        .orange {
+            font-size: 25px;
+            background-color: rgb(255, 187, 61);
+            flex: 2;
+        }
+        
+        .blue {
+            font-size: 25px;
+            background-color: lightskyblue;
+            flex: 1;
+        }
+
+        .inside {
+            background-color: white;
+            font-size: 25px;
+            padding: 10px;
+            margin: auto auto;
+        }
+
+        .red div {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="yellow">
+            Yellow
+            <div class="inside">1</div>
+            <div class="inside">2</div>
+            <div class="inside">3</div>
+            <div class="inside">4</div>
+        </div>
+        <div class="red">
+            Red
+            <div class="inside">A</div>
+            <div class="inside">B</div>
+            <div class="inside">C</div>
+            <div class="inside">D</div>
+        </div>
+        <div class="green">Green</div>
+        <div class="orange">Orange</div>
+        <div class="blue">Blue</div>
+    </div>
+</body>
+
+</html>
