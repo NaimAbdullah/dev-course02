@@ -155,12 +155,12 @@ console.log(join(initalColors,exoticColors));
 // Activity: rest
 const average = (...numbers) => {
   //1st way
-  /*
-    return numbers.reduce(
-      (previousNumber, currentNumber) =>
-        (previousNumber + currentNumber)
-    ) / numbers.length;
-    */
+  
+    // return numbers.reduce(
+    //   (previousNumber, currentNumber) =>
+    //     (previousNumber + currentNumber)
+    // ) / numbers.length;
+    
   //2nd way
   let result = 0;
   numbers.forEach((num) => result += num/numbers.length);

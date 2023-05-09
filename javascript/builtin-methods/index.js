@@ -310,7 +310,3 @@ const source = { b: 4, c: 5 };
 const returnedTarget = Object.assign(target, source); // {a: 1, b: 4, c: 5}
 console.log(returnedTarget);
 console.log({ ...target, ...source }); // {a: 1, b: 4, c: 5}
-
-// cihat, felicity
-// rami, naim
-// yasser, bilal
