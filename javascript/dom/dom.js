@@ -225,3 +225,81 @@ This is a text
 
 This appended text
 */
+
+/* ----- CREATE AN ELEMENT ------ */
+
+// createElement
+
+const divEl = document.createElement("div");
+const textNode = document.createTextNode("This is coming from javascript");
+
+/*
+divEl.textContent = textNode; // Not working
+divEl.innerText = textNode; // Not working
+divEl.innerHTML = textNode; // Not working
+*/
+
+// divEl.appendChild("Hello World"); // error => text is not a node
+// divEl.appendChild(textNode); // working fine
+
+// divEl.append("Hello world"); // Working fine
+divEl.append(textNode); // Working fine
+
+console.log(divEl); // <div></div>
+console.log(textNode); // "This is coming from javascript"
+
+const node = divEl.append(textNode);
+console.log(node); // undefined
+
+const node2 = divEl.appendChild(textNode);
+console.log("node2", node2); // This is coming from javascript
+
+// apend my newly created element to body
+// We created bodyEl on top of the file
+
+divEl.style.color = '#000';
+divEl.style.padding = "20px 0"
+bodyEl.style.fontSize = "20px"
+
+bodyEl.append(divEl);
+
+// without createTextNode
+const footer = document.createElement('footer');
+footer.innerHTML = '<p>This is footer</p>';
+footer.style.borderTop = "2px solid"
+
+bodyEl.append(footer);
+
+/* ----- EVENT HANDLERS ----- */
+
+const myInput = document.querySelector('.customerName');
+const myBtn = document.querySelector('.btn');
+
+// give click event to button
+
+// myBtn.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     console.log('button clicked!');
+// });
+myBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log('button clicked!');
+});
+
+
+// give event to input
+
+// myInput.addEventListener('change', () => {
+//     console.log('input updating');
+// });
+
+// Doesn't wait for user to leave the input box
+// myInput.addEventListener('input', () => {
+//     console.log('input updating');
+// });
+
+myInput.addEventListener('focus', (event) => {
+    event.target.style.background = "orange";
+    console.log(event.target.value);
+});
+
