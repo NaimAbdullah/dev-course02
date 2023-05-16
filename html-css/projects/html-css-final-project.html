@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML_CSS_Final_Project</title>
+    <style>
+        :root {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(123, 134, 82);
+        }
+
+        header {
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px 15px;
+            background-color: rgb(128, 128, 128);
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            color: rgb(66, 66, 66);
+            border: 1px solid black;
+            background-color: rgb(128, 128, 128);
+            border-radius: 15px;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        p {
+            color: rgb(66, 66, 66);
+            flex-direction: row;
+            font-size: larger;
+        }
+
+        header p:hover {
+            color: rgb(20, 97, 220);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: (1fr, 1fr, 1fr);
+        }
+
+        main > * {
+            color: black;
+            border: 1px solid black;
+            background-color: rgb(193, 193, 193);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            font-size: larger;
+        }
+
+        button:active {
+            color: blue;
+            background-color: darkgray;
+        }
+
+        .username {
+            grid-column: 1 / 2;
+        }
+
+        .password {
+            grid-column: 2 / 3;
+            grid-row: 2/ 3;
+        }
+
+        .submit {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .forgot {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1><u>MY PROFILE</u></h1>
+    <header>
+        <p>Home</p>
+        <p style="color: lightskyblue;">Login/Create Account</p>
+        <p>Help</p>
+        <p>Contact Us</p>
+    </header>
+
+    <main>
+        <input type="text" class="username" placeholder="Username">
+        <input type="password" class="password" placeholder="Password">
+        <button class="submit">SUBMIT</button>
+        <button class="forgot">Forgot Username / Password</button>
+    </main>
+    <footer></footer>
+
 </body>
+
 </html>
